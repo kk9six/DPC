@@ -4,7 +4,7 @@
 """
 File: point.py
 Author: K
-Email: 7thmar37@email.com
+Email: 7thmar37@gmail.com
 Github: https://github.com/7thMar
 Description: 输出所有数据集的分布点
 """

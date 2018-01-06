@@ -4,7 +4,7 @@
 """
 File: cluster.py
 Author: K
-Email: 7thmar37@email.com
+Email: 7thmar37@gmail.com
 Github: https://github.com/7thMar
 Description: DPC 算法的实现和测试
 """
@@ -67,6 +67,7 @@ class DPC(object):
             self.draw_cluster(data_name, cluster, halo, points, plot)
 
     def load_points_cacl_distance(self, path):
+        print(path)
         points = pd.read_csv(path, sep='\t', usecols=[0, 1])
         max_id = len(points)
         d = pd.DataFrame(np.zeros((max_id, max_id)))  # 距离矩阵
@@ -364,16 +365,18 @@ if __name__ == '__main__':
     p = Pool(4)
     path = sys.path[0] + '/dataset/'
     #  path | title | N: 聚类数 | dc method | dc per | rho method | delta method | use_halo | plot
-    p.apply_async(cluster, args=(path + 'origin_1000.dat', 'origin-1000', 5, 0, 2, 1, 1, True))
+    #  p.apply_async(cluster, args=(path + 'origin_1000.dat', 'origin-1000', 5, 0, 2, 1, 1, False))
     #  p.apply_async(cluster, args=(path + 'origin_4000.dat', 'origin-4000', 5, 0, 2, 1, 1, True))
-    #  p.apply_async(cluster, args=(path + 'flame.dat', 'flame', 2, 0, 3, 1, 1, True))
-    #  p.apply_async(cluster, args=(path + 'spiral.dat', 'spiral', 3, 0, 2))
+    #  p.apply_async(cluster, args=(path + 'flame.dat', 'flame', 2, 0, 1, 1, 1, True))
+    #  p.apply_async(cluster, args=(path + 'spiral.dat', 'spiral', 3, 0, 3))
     #  p.apply_async(cluster, args=(path + 'aggregation.dat', 'aggregation', 7, 0, 3))
-    #  p.apply_async(cluster, args=(path + 'R15.dat', 'R15', 15))
+    #  p.apply_async(cluster, args=(path + 'R15.dat', 'R15', 15, 0, 20))
+    #  p.apply_async(cluster, args=(path + 'R15.dat', 'R15', 15, 0, 2))
     #  p.apply_async(cluster, args=(path + 'D31.dat', 'D31', 31))
     #  p.apply_async(cluster, args=(path + 'jain.dat', 'jain', 2))
     #  p.apply_async(cluster, args=(path + 'pathbased.dat', 'pathbased', 3, 0, 4))
     #  p.apply_async(cluster, args=(path + 'compound.dat', 'compound', 5, 0, 4))
+    p.apply_async(cluster, args=(path + 't48k.dat', 't48k', 6, 0, 2))
     p.close()
     p.join()
 

@@ -2,7 +2,7 @@
 
 [Clustering by fast search and find of density peaks](http://science.sciencemag.org/content/344/6191/1492.full) by [Alex Rodriguez] and [Alessandro Laio](https://people.sissa.it/~laio/)
 
-- [notebook](https://github.com/ahazxm/DPC/blob/master/Clustering%20by%20fast%20search%20and%20find%20of%20density%20peaks.ipynb)
+- [notebook **(uncomplete)**](https://github.com/ahazxm/DPC/blob/master/Clustering%20by%20fast%20search%20and%20find%20of%20density%20peaks.ipynb)
 
 - [datasets 数据集结构](https://github.com/7thMar/DPC/tree/master/dataset) **(X, Y, [class])**
 

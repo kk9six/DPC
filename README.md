@@ -1,11 +1,10 @@
 # Clustering by fast search and find of density peaks
 
+[Clustering by fast search and find of density peaks](http://science.sciencemag.org/content/344/6191/1492.full) by [Alex Rodriguez] and [Alessandro Laio](https://people.sissa.it/~laio/)
 
+- [notebook](https://github.com/ahazxm/DPC/blob/master/Clustering%20by%20fast%20search%20and%20find%20of%20density%20peaks.ipynb)
 
-- [数据集结构](https://github.com/7thMar/DPC/tree/master/dataset)
-  - 第一列（X坐标）
-  - 第二列（Y坐标）
-  - [第三列（类属）]
+- [datasets 数据集结构](https://github.com/7thMar/DPC/tree/master/dataset) **(X, Y, [class])**
 
 - [point.py](https://github.com/7thMar/DPC/blob/master/point.py)
 > 绘制所有数据集点分布
@@ -15,3 +14,4 @@
 
 - [DPC.pdf](https://github.com/7thMar/DPC/blob/master/DPC.pdf)
 > 文档
+
